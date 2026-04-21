@@ -33,7 +33,7 @@ CREATE TABLE `attachments` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `attachments_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +42,7 @@ CREATE TABLE `attachments` (
 
 LOCK TABLES `attachments` WRITE;
 /*!40000 ALTER TABLE `attachments` DISABLE KEYS */;
-INSERT INTO `attachments` VALUES (1,1,14,6,1,'/uploads/v.pdf','2026-04-09 08:46:49'),(2,1,14,6,2,'/uploads/a.pdf','2026-04-09 08:46:49'),(3,1,1,5,1,'/uploads/verify.pdf','2026-04-09 09:23:00'),(4,1,1,5,2,'/uploads/damage.jpg','2026-04-09 09:23:00'),(5,1,1,4,1,'/uploads/report.pdf','2026-04-09 09:47:25'),(6,1,1,4,2,'/uploads/prescription.pdf','2026-04-09 09:47:25'),(7,1,1,4,3,'/uploads/estimate.pdf','2026-04-09 09:47:25'),(8,1,1,4,1,'/uploads/injury.jpg','2026-04-09 09:47:25'),(11,1,2,3,1,'/uploads/mark_sheet.pdf','2026-04-09 10:07:12'),(12,1,2,3,2,'/uploads/fee_structure.pdf','2026-04-09 10:07:12'),(13,1,2,3,1,'/uploads/id_card.jpg','2026-04-09 10:07:12'),(14,1,2,3,2,'/uploads/college_fee.pdf','2026-04-09 10:07:12'),(15,1,9,2,1,'attachments/verification_arun.pdf','2026-04-09 14:19:45'),(16,1,9,2,2,'attachments/photo_arun.jpg','2026-04-09 14:19:45'),(17,1,9,2,1,'attachments/verification_priya.pdf','2026-04-09 14:19:45'),(18,1,9,2,2,'attachments/photo_priya.jpg','2026-04-09 14:19:45'),(19,1,3,1,5,'/uploads/fruit-donation.pdf','2026-04-13 02:55:13'),(20,1,2,2,1,'/uploads/verify.pdf','2026-04-13 09:15:44'),(21,1,3,2,1,'/uploads/verify.pdf','2026-04-13 09:17:32'),(22,4,0,1,1,'uploads/profile/sneha_profile.jpg','2026-04-14 16:31:48'),(23,5,0,1,1,'uploads/profile/sneha_profile.jpg','2026-04-14 16:34:55'),(24,7,0,0,1,'file:///var/mobile/Containers/Data/Application/42A2B424-0D3E-4930-8A1D-39A41905B380/Library/Caches/ExponentExperienceData/@anonymous/MyReactNativeApp-5eb5261e-cb88-45bf-b7ac-96fbd21d4094/DocumentPicker/E6F251BA-AC0C-4BF8-9512-B65FB7D79217.JPG','2026-04-14 18:49:11'),(25,8,0,0,1,'uploads/pawan_profile.jpg','2026-04-17 13:44:48'),(26,9,0,0,2,'uploads/arun_id_proof.pdf','2026-04-17 13:50:13');
+INSERT INTO `attachments` VALUES (1,1,14,6,1,'/uploads/v.pdf','2026-04-09 08:46:49'),(2,1,14,6,2,'/uploads/a.pdf','2026-04-09 08:46:49'),(3,1,1,5,1,'/uploads/verify.pdf','2026-04-09 09:23:00'),(4,1,1,5,2,'/uploads/damage.jpg','2026-04-09 09:23:00'),(5,1,1,4,1,'/uploads/report.pdf','2026-04-09 09:47:25'),(6,1,1,4,2,'/uploads/prescription.pdf','2026-04-09 09:47:25'),(7,1,1,4,3,'/uploads/estimate.pdf','2026-04-09 09:47:25'),(8,1,1,4,1,'/uploads/injury.jpg','2026-04-09 09:47:25'),(11,1,2,3,1,'/uploads/mark_sheet.pdf','2026-04-09 10:07:12'),(12,1,2,3,2,'/uploads/fee_structure.pdf','2026-04-09 10:07:12'),(13,1,2,3,1,'/uploads/id_card.jpg','2026-04-09 10:07:12'),(14,1,2,3,2,'/uploads/college_fee.pdf','2026-04-09 10:07:12'),(15,1,9,2,1,'attachments/verification_arun.pdf','2026-04-09 14:19:45'),(16,1,9,2,2,'attachments/photo_arun.jpg','2026-04-09 14:19:45'),(17,1,9,2,1,'attachments/verification_priya.pdf','2026-04-09 14:19:45'),(18,1,9,2,2,'attachments/photo_priya.jpg','2026-04-09 14:19:45'),(19,1,3,1,5,'/uploads/fruit-donation.pdf','2026-04-13 02:55:13'),(20,1,2,2,1,'/uploads/verify.pdf','2026-04-13 09:15:44'),(21,1,3,2,1,'/uploads/verify.pdf','2026-04-13 09:17:32'),(22,4,0,1,1,'uploads/profile/sneha_profile.jpg','2026-04-14 16:31:48'),(23,5,0,1,1,'uploads/profile/sneha_profile.jpg','2026-04-14 16:34:55'),(24,7,0,0,1,'file:///var/mobile/Containers/Data/Application/42A2B424-0D3E-4930-8A1D-39A41905B380/Library/Caches/ExponentExperienceData/@anonymous/MyReactNativeApp-5eb5261e-cb88-45bf-b7ac-96fbd21d4094/DocumentPicker/E6F251BA-AC0C-4BF8-9512-B65FB7D79217.JPG','2026-04-14 18:49:11'),(25,8,0,0,1,'uploads/pawan_profile.jpg','2026-04-17 13:44:48'),(26,9,0,0,2,'uploads/arun_id_proof.pdf','2026-04-17 13:50:13'),(31,1,17,6,1,'/uploads/verif1.pdf','2026-04-21 14:33:05'),(32,1,17,6,2,'/uploads/ach1.pdf','2026-04-21 14:33:05'),(33,1,3,5,1,'/uploads/shelter/verif1.pdf','2026-04-21 14:45:22'),(34,1,3,5,2,'/uploads/shelter/damage1.jpg','2026-04-21 14:45:22'),(35,1,11,2,1,'attachments/verification_meena.pdf','2026-04-21 15:04:11'),(36,1,11,2,2,'attachments/photo_meena.jpg','2026-04-21 15:04:11'),(37,1,12,2,1,'attachments/verification_meena.pdf','2026-04-21 15:05:03'),(38,1,12,2,2,'attachments/photo_meena.jpg','2026-04-21 15:05:03'),(39,1,3,3,1,'/uploads/edu/verif_ravi.pdf','2026-04-21 15:08:06'),(40,1,3,3,2,'/uploads/edu/fees_ravi.pdf','2026-04-21 15:08:06'),(41,2,2,4,1,'/uploads/medical/report1.pdf','2026-04-21 15:09:26'),(42,2,2,4,2,'/uploads/medical/prescription1.pdf','2026-04-21 15:09:26'),(43,2,2,4,3,'/uploads/medical/estimate1.pdf','2026-04-21 15:09:26'),(44,1,13,2,1,'attachments/verification_meena.pdf','2026-04-21 15:16:45'),(45,1,13,2,2,'attachments/photo_meena.jpg','2026-04-21 15:16:45');
 /*!40000 ALTER TABLE `attachments` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -89,7 +89,7 @@ CREATE TABLE `beneficiary_clothing_sizes` (
   KEY `size_id` (`size_id`),
   CONSTRAINT `beneficiary_clothing_sizes_ibfk_1` FOREIGN KEY (`beneficiary_id`) REFERENCES `clothes_beneficiaries` (`id`) ON DELETE CASCADE,
   CONSTRAINT `beneficiary_clothing_sizes_ibfk_2` FOREIGN KEY (`size_id`) REFERENCES `clothing_size_row` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -98,7 +98,7 @@ CREATE TABLE `beneficiary_clothing_sizes` (
 
 LOCK TABLES `beneficiary_clothing_sizes` WRITE;
 /*!40000 ALTER TABLE `beneficiary_clothing_sizes` DISABLE KEYS */;
-INSERT INTO `beneficiary_clothing_sizes` VALUES (1,1,'Shirt',1,2),(2,1,'Pants',2,2),(3,2,'Dress',3,1);
+INSERT INTO `beneficiary_clothing_sizes` VALUES (1,1,'Shirt',1,2),(2,1,'Pants',2,2),(3,2,'Dress',3,1),(4,3,'Shirt',1,2),(5,3,'Skirt',2,2),(6,4,'Shirt',1,2),(7,4,'Skirt',2,2),(8,5,'Shirt',1,2),(9,5,'Skirt',2,2);
 /*!40000 ALTER TABLE `beneficiary_clothing_sizes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -170,6 +170,7 @@ CREATE TABLE `clothes_beneficiaries` (
   `urgency_level_id` int NOT NULL,
   `verification_document_id` int DEFAULT NULL,
   `beneficiary_photo_id` int DEFAULT NULL,
+  `amount_requested` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `clothes_request_id` (`clothes_request_id`),
   KEY `age_group` (`age_group`),
@@ -185,7 +186,7 @@ CREATE TABLE `clothes_beneficiaries` (
   CONSTRAINT `clothes_beneficiaries_ibfk_5` FOREIGN KEY (`urgency_level_id`) REFERENCES `urgency_levels` (`id`),
   CONSTRAINT `clothes_beneficiaries_ibfk_6` FOREIGN KEY (`verification_document_id`) REFERENCES `attachments` (`id`) ON DELETE SET NULL,
   CONSTRAINT `clothes_beneficiaries_ibfk_7` FOREIGN KEY (`beneficiary_photo_id`) REFERENCES `attachments` (`id`) ON DELETE SET NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -194,7 +195,7 @@ CREATE TABLE `clothes_beneficiaries` (
 
 LOCK TABLES `clothes_beneficiaries` WRITE;
 /*!40000 ALTER TABLE `clothes_beneficiaries` DISABLE KEYS */;
-INSERT INTO `clothes_beneficiaries` VALUES (1,9,'Arun Kumar',3,1,5,'2026-04-15',2,15,16),(2,9,'Priya Sharma',2,2,5,'2026-04-20',1,17,18);
+INSERT INTO `clothes_beneficiaries` VALUES (1,9,'Arun Kumar',3,1,5,'2026-04-15',2,15,16,NULL),(2,9,'Priya Sharma',2,2,5,'2026-04-20',1,17,18,NULL),(3,11,'Meena',2,2,3,'2026-06-10',1,35,36,NULL),(4,12,'Meena',2,2,3,'2026-06-10',1,37,38,NULL),(5,13,'Meena',2,2,3,'2026-06-10',1,44,45,5000);
 /*!40000 ALTER TABLE `clothes_beneficiaries` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -255,7 +256,6 @@ CREATE TABLE `clothes_requests` (
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `verified` tinyint(1) DEFAULT '0',
   `reject_reason` text,
-  `amount_requested` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   KEY `category_id` (`category_id`),
@@ -265,7 +265,7 @@ CREATE TABLE `clothes_requests` (
   CONSTRAINT `clothes_requests_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `request_categories` (`id`),
   CONSTRAINT `clothes_requests_ibfk_3` FOREIGN KEY (`status_id`) REFERENCES `request_status_master` (`id`) ON DELETE SET NULL,
   CONSTRAINT `clothes_requests_ibfk_4` FOREIGN KEY (`urgency_id`) REFERENCES `urgency_levels` (`id`) ON DELETE SET NULL
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -274,7 +274,7 @@ CREATE TABLE `clothes_requests` (
 
 LOCK TABLES `clothes_requests` WRITE;
 /*!40000 ALTER TABLE `clothes_requests` DISABLE KEYS */;
-INSERT INTO `clothes_requests` VALUES (9,1,2,2,2,'Clothes Request for Summer Drive','Distributing clothes for children in need','2026-04-09 14:19:45','2026-04-21 08:52:24',0,NULL,101),(10,1,2,2,2,'data','data','2026-04-09 14:19:45','2026-04-21 08:52:24',0,NULL,11);
+INSERT INTO `clothes_requests` VALUES (9,1,2,2,2,'Clothes Request for Summer Drive','Distributing clothes for children in need','2026-04-09 14:19:45','2026-04-21 08:52:24',0,NULL),(10,1,2,2,2,'data','data','2026-04-09 14:19:45','2026-04-21 08:52:24',0,NULL),(11,1,2,1,3,'School Uniform Support Program','Uniforms for school children in rural area','2026-04-21 15:04:11','2026-04-21 15:04:11',0,NULL),(12,1,2,1,3,'School Uniform Support Program','Uniforms for school children in rural area','2026-04-21 15:05:03','2026-04-21 15:05:03',0,NULL),(13,1,2,1,3,'School Uniform Support Program','Uniforms for school children in rural area','2026-04-21 15:16:44','2026-04-21 15:16:44',0,NULL);
 /*!40000 ALTER TABLE `clothes_requests` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -819,7 +819,7 @@ CREATE TABLE `education_request_students` (
   CONSTRAINT `education_request_students_ibfk_2` FOREIGN KEY (`education_support_type_id`) REFERENCES `education_support_types` (`id`),
   CONSTRAINT `education_request_students_ibfk_3` FOREIGN KEY (`verification_document_id`) REFERENCES `attachments` (`id`) ON DELETE SET NULL,
   CONSTRAINT `fk_edu_support_doc` FOREIGN KEY (`education_support_document_id`) REFERENCES `attachments` (`id`) ON DELETE SET NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -828,7 +828,7 @@ CREATE TABLE `education_request_students` (
 
 LOCK TABLES `education_request_students` WRITE;
 /*!40000 ALTER TABLE `education_request_students` DISABLE KEYS */;
-INSERT INTO `education_request_students` VALUES (1,2,'Arun Kumar',18,'12th',1,50000,'ABC Higher Secondary School','SCH12345','Chennai, Tamil Nadu','Principal Rajesh','9876543210',11,12),(2,2,'Priya',20,'B.Sc Computer Science',2,75000,'XYZ College','COL56789','Madurai, Tamil Nadu','Admin Office','9123456780',13,14);
+INSERT INTO `education_request_students` VALUES (1,2,'Arun Kumar',18,'12th',1,50000,'ABC Higher Secondary School','SCH12345','Chennai, Tamil Nadu','Principal Rajesh','9876543210',11,12),(2,2,'Priya',20,'B.Sc Computer Science',2,75000,'XYZ College','COL56789','Madurai, Tamil Nadu','Admin Office','9123456780',13,14),(3,3,'Ravi',17,'11th',1,30000,'Government Higher Secondary School','SCH10021','Coimbatore, Tamil Nadu','Headmaster','9000011122',39,40);
 /*!40000 ALTER TABLE `education_request_students` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -860,7 +860,7 @@ CREATE TABLE `education_requests` (
   CONSTRAINT `education_requests_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `request_categories` (`id`),
   CONSTRAINT `education_requests_ibfk_3` FOREIGN KEY (`status_id`) REFERENCES `request_status_master` (`id`) ON DELETE SET NULL,
   CONSTRAINT `education_requests_ibfk_4` FOREIGN KEY (`urgency_id`) REFERENCES `urgency_levels` (`id`) ON DELETE SET NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -869,7 +869,7 @@ CREATE TABLE `education_requests` (
 
 LOCK TABLES `education_requests` WRITE;
 /*!40000 ALTER TABLE `education_requests` DISABLE KEYS */;
-INSERT INTO `education_requests` VALUES (2,1,3,2,2,'Education Support Required','Need financial help for students','2026-04-09 10:07:12','2026-04-21 10:12:58',0,NULL);
+INSERT INTO `education_requests` VALUES (2,1,3,2,2,'Education Support Required','Need financial help for students','2026-04-09 10:07:12','2026-04-21 10:12:58',0,NULL),(3,1,3,1,2,'School Fee Assistance','Financial help needed for school education','2026-04-21 15:08:06','2026-04-21 15:08:06',0,NULL);
 /*!40000 ALTER TABLE `education_requests` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1002,7 +1002,7 @@ CREATE TABLE `food_daily_meal_requests` (
   CONSTRAINT `fk_daily_time_slot` FOREIGN KEY (`time_slot_id`) REFERENCES `food_time_slots` (`id`),
   CONSTRAINT `fk_daily_urgency` FOREIGN KEY (`urgency_id`) REFERENCES `urgency_levels` (`id`),
   CONSTRAINT `fk_daily_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1011,7 +1011,7 @@ CREATE TABLE `food_daily_meal_requests` (
 
 LOCK TABLES `food_daily_meal_requests` WRITE;
 /*!40000 ALTER TABLE `food_daily_meal_requests` DISABLE KEYS */;
-INSERT INTO `food_daily_meal_requests` VALUES (1,1,2,2,2,'Daily Meal for Students','Requesting daily meals for students',30,2,1,1,2,1,NULL,NULL,2,'456 School Road','Opposite Library',0,'2026-04-09 14:55:20','2026-04-21 10:11:28',0,NULL,10);
+INSERT INTO `food_daily_meal_requests` VALUES (1,1,2,2,2,'Daily Meal for Students','Requesting daily meals for students',30,2,1,1,2,1,NULL,NULL,2,'456 School Road','Opposite Library',0,'2026-04-09 14:55:20','2026-04-21 10:11:28',0,NULL,10),(2,1,2,1,1,'Monthly Meal Support Program','Daily meals required for underprivileged children',60,2,1,1,2,2,'90',NULL,3,'Adyar, Chennai','Near Community Hall',1,'2026-04-21 14:57:51','2026-04-21 14:57:51',0,NULL,500);
 /*!40000 ALTER TABLE `food_daily_meal_requests` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1208,7 +1208,7 @@ CREATE TABLE `food_requests_cooked_food` (
   CONSTRAINT `fk_cooked_time_slot` FOREIGN KEY (`time_slot_id`) REFERENCES `food_time_slots` (`id`) ON DELETE RESTRICT ON UPDATE CASCADE,
   CONSTRAINT `fk_cooked_urgency` FOREIGN KEY (`urgency_id`) REFERENCES `urgency_levels` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `fk_cooked_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1217,7 +1217,7 @@ CREATE TABLE `food_requests_cooked_food` (
 
 LOCK TABLES `food_requests_cooked_food` WRITE;
 /*!40000 ALTER TABLE `food_requests_cooked_food` DISABLE KEYS */;
-INSERT INTO `food_requests_cooked_food` VALUES (1,1,1,2,2,'Cooked Food for Event','Need cooked meals for children event',1,2,50,50,'2026-04-15',3,2,'123 Main Street','Near City Park',1,NULL,'2026-04-09 14:57:55','2026-04-20 15:08:37',0);
+INSERT INTO `food_requests_cooked_food` VALUES (1,1,1,2,2,'Cooked Food for Event','Need cooked meals for children event',1,2,50,50,'2026-04-15',3,2,'123 Main Street','Near City Park',1,NULL,'2026-04-09 14:57:55','2026-04-20 15:08:37',0),(2,1,1,1,2,'Cooked Meals for School Event','Need freshly cooked meals for 40 children event',1,1,40,40,'2026-05-12',2,2,'Anna Nagar, Chennai','Near Metro Station',1,NULL,'2026-04-21 14:51:09','2026-04-21 14:51:09',0);
 /*!40000 ALTER TABLE `food_requests_cooked_food` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1376,7 +1376,7 @@ CREATE TABLE `grocery_essentials_items` (
   CONSTRAINT `fk_item_priority` FOREIGN KEY (`priority_id`) REFERENCES `grocery_priority_levels` (`id`),
   CONSTRAINT `fk_item_request` FOREIGN KEY (`grocery_essentials_request_id`) REFERENCES `grocery_essentials_requests` (`id`) ON DELETE CASCADE,
   CONSTRAINT `fk_item_unit` FOREIGN KEY (`unit_id`) REFERENCES `grocery_unit_options` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1385,7 +1385,7 @@ CREATE TABLE `grocery_essentials_items` (
 
 LOCK TABLES `grocery_essentials_items` WRITE;
 /*!40000 ALTER TABLE `grocery_essentials_items` DISABLE KEYS */;
-INSERT INTO `grocery_essentials_items` VALUES (1,1,1,'Rice',10.00,2,1,'2026-04-09 14:46:53','2026-04-09 14:46:53'),(2,1,2,'Wheat Flour',5.00,2,2,'2026-04-09 14:46:53','2026-04-09 14:46:53');
+INSERT INTO `grocery_essentials_items` VALUES (1,1,1,'Rice',10.00,2,1,'2026-04-09 14:46:53','2026-04-09 14:46:53'),(2,1,2,'Wheat Flour',5.00,2,2,'2026-04-09 14:46:53','2026-04-09 14:46:53'),(3,2,1,'Rice',20.00,2,1,'2026-04-21 15:00:30','2026-04-21 15:00:30'),(4,2,3,'Cooking Oil',2.00,1,2,'2026-04-21 15:00:30','2026-04-21 15:00:30');
 /*!40000 ALTER TABLE `grocery_essentials_items` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1424,7 +1424,7 @@ CREATE TABLE `grocery_essentials_requests` (
   CONSTRAINT `fk_grocery_status` FOREIGN KEY (`status_id`) REFERENCES `request_status_master` (`id`),
   CONSTRAINT `fk_grocery_urgency` FOREIGN KEY (`urgency_id`) REFERENCES `urgency_levels` (`id`),
   CONSTRAINT `fk_grocery_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1433,7 +1433,7 @@ CREATE TABLE `grocery_essentials_requests` (
 
 LOCK TABLES `grocery_essentials_requests` WRITE;
 /*!40000 ALTER TABLE `grocery_essentials_requests` DISABLE KEYS */;
-INSERT INTO `grocery_essentials_requests` VALUES (1,1,3,2,2,'Grocery Essentials for Family','Need groceries for a family of four',1,'789 Market Lane','Near Grocery Store',1,'2026-04-09 14:46:53','2026-04-21 08:53:46',0,NULL,11);
+INSERT INTO `grocery_essentials_requests` VALUES (1,1,3,2,2,'Grocery Essentials for Family','Need groceries for a family of four',1,'789 Market Lane','Near Grocery Store',1,'2026-04-09 14:46:53','2026-04-21 08:53:46',0,NULL,11),(2,1,3,1,2,'Monthly Grocery Support for Family','Basic grocery items required for a family of 5',2,'Anna Nagar, Chennai','Near Park',1,'2026-04-21 15:00:30','2026-04-21 15:00:30',0,NULL,7000);
 /*!40000 ALTER TABLE `grocery_essentials_requests` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1738,7 +1738,7 @@ CREATE TABLE `medical_requests` (
   CONSTRAINT `medical_requests_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `request_categories` (`id`),
   CONSTRAINT `medical_requests_ibfk_3` FOREIGN KEY (`status_id`) REFERENCES `request_status_master` (`id`) ON DELETE SET NULL,
   CONSTRAINT `medical_requests_ibfk_4` FOREIGN KEY (`urgency_id`) REFERENCES `urgency_levels` (`id`) ON DELETE SET NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1747,7 +1747,7 @@ CREATE TABLE `medical_requests` (
 
 LOCK TABLES `medical_requests` WRITE;
 /*!40000 ALTER TABLE `medical_requests` DISABLE KEYS */;
-INSERT INTO `medical_requests` VALUES (1,1,4,2,2,'Medical Help Needed','Support required for surgery','2026-04-09 09:47:25','2026-04-20 12:51:16',0,NULL);
+INSERT INTO `medical_requests` VALUES (1,1,4,2,2,'Medical Help Needed','Support required for surgery','2026-04-09 09:47:25','2026-04-20 12:51:16',0,NULL),(2,2,4,1,3,'Surgery Financial Support','Need support for kidney surgery treatment','2026-04-21 15:09:26','2026-04-21 15:09:26',0,NULL);
 /*!40000 ALTER TABLE `medical_requests` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1795,7 +1795,7 @@ CREATE TABLE `patients` (
   CONSTRAINT `patients_ibfk_2` FOREIGN KEY (`gender_id`) REFERENCES `gender` (`id`),
   CONSTRAINT `patients_ibfk_3` FOREIGN KEY (`blood_group_id`) REFERENCES `blood_groups` (`id`),
   CONSTRAINT `patients_ibfk_4` FOREIGN KEY (`medical_category_id`) REFERENCES `medical_categories` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1804,7 +1804,7 @@ CREATE TABLE `patients` (
 
 LOCK TABLES `patients` WRITE;
 /*!40000 ALTER TABLE `patients` DISABLE KEYS */;
-INSERT INTO `patients` VALUES (1,1,'Ramesh',45,1,'Heart Surgery',2,3,'Apollo Hospital','Chennai','Dr. Kumar','Insurance Partial',50000.00,150000.00,'2026-05-20','9876543210','Suresh','[1, 2, 3]',5,6,7),(2,1,'Lakshmi',30,2,'Accident Injury',1,2,'Government Hospital',NULL,'Dr. Priya',NULL,NULL,50000.00,'2026-06-01',NULL,NULL,'[2]',8,NULL,NULL);
+INSERT INTO `patients` VALUES (1,1,'Ramesh',45,1,'Heart Surgery',2,3,'Apollo Hospital','Chennai','Dr. Kumar','Insurance Partial',50000.00,150000.00,'2026-05-20','9876543210','Suresh','[1, 2, 3]',5,6,7),(2,1,'Lakshmi',30,2,'Accident Injury',1,2,'Government Hospital',NULL,'Dr. Priya',NULL,NULL,50000.00,'2026-06-01',NULL,NULL,'[2]',8,NULL,NULL),(3,2,'Arun Kumar',38,1,'Kidney Stone Surgery',1,2,'Fortis Hospital','Chennai','Dr. Mehta','No Insurance',20000.00,120000.00,'2026-06-10','9001122334','Selvam','[1, 2]',41,42,43);
 /*!40000 ALTER TABLE `patients` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2082,7 +2082,7 @@ CREATE TABLE `shelter_beneficiaries` (
   CONSTRAINT `fk_shelter_ben_special_need` FOREIGN KEY (`special_need_id`) REFERENCES `shelter_special_needs` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `fk_shelter_ben_staying` FOREIGN KEY (`staying_type_id`) REFERENCES `shelter_staying_types` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `fk_shelter_ben_verification_doc` FOREIGN KEY (`verification_document_id`) REFERENCES `attachments` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2091,7 +2091,7 @@ CREATE TABLE `shelter_beneficiaries` (
 
 LOCK TABLES `shelter_beneficiaries` WRITE;
 /*!40000 ALTER TABLE `shelter_beneficiaries` DISABLE KEYS */;
-INSERT INTO `shelter_beneficiaries` VALUES (1,1,'Ravi',4,1,2,'Chennai','2 weeks',1,2,10,3,4,10);
+INSERT INTO `shelter_beneficiaries` VALUES (1,1,'Ravi',4,1,2,'Chennai','2 weeks',1,2,10,3,4,10),(2,3,'Arun',5,2,1,'Tambaram, Chennai','3 weeks',1,2,15,33,34,NULL);
 /*!40000 ALTER TABLE `shelter_beneficiaries` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2148,7 +2148,7 @@ CREATE TABLE `shelter_requests` (
   CONSTRAINT `fk_shelter_status` FOREIGN KEY (`status_id`) REFERENCES `request_status_master` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `fk_shelter_urgency` FOREIGN KEY (`urgency_id`) REFERENCES `urgency_levels` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `fk_shelter_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2157,7 +2157,7 @@ CREATE TABLE `shelter_requests` (
 
 LOCK TABLES `shelter_requests` WRITE;
 /*!40000 ALTER TABLE `shelter_requests` DISABLE KEYS */;
-INSERT INTO `shelter_requests` VALUES (1,1,5,'Shelter Needed','Flood affected family',2,2,'2026-04-09 09:23:00','2026-04-20 12:48:46',1,'Reason for rejection'),(2,1,5,'Double check','Doublr check',1,2,'2026-04-09 09:23:00','2026-04-10 20:13:44',1,'CHUMMA');
+INSERT INTO `shelter_requests` VALUES (1,1,5,'Shelter Needed','Flood affected family',2,2,'2026-04-09 09:23:00','2026-04-20 12:48:46',1,'Reason for rejection'),(2,1,5,'Double check','Doublr check',1,2,'2026-04-09 09:23:00','2026-04-10 20:13:44',1,'CHUMMA'),(3,1,5,'Temporary Shelter Required','House damaged due to heavy rains',1,2,'2026-04-21 14:45:21','2026-04-21 14:45:21',0,NULL);
 /*!40000 ALTER TABLE `shelter_requests` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2324,7 +2324,7 @@ CREATE TABLE `sports_request_beneficiaries` (
   CONSTRAINT `sports_request_beneficiaries_ibfk_3` FOREIGN KEY (`playing_level_id`) REFERENCES `playing_levels` (`id`),
   CONSTRAINT `sports_request_beneficiaries_ibfk_5` FOREIGN KEY (`verification_document_id`) REFERENCES `attachments` (`id`) ON DELETE SET NULL,
   CONSTRAINT `sports_request_beneficiaries_ibfk_6` FOREIGN KEY (`achievement_document_id`) REFERENCES `attachments` (`id`) ON DELETE SET NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2333,7 +2333,7 @@ CREATE TABLE `sports_request_beneficiaries` (
 
 LOCK TABLES `sports_request_beneficiaries` WRITE;
 /*!40000 ALTER TABLE `sports_request_beneficiaries` DISABLE KEYS */;
-INSERT INTO `sports_request_beneficiaries` VALUES (1,14,'Ravi','18-25',1,2,'District player',5000,'2026-05-10','ABC College','9876543210',1,2,'[1]','[1, 2]');
+INSERT INTO `sports_request_beneficiaries` VALUES (1,14,'Ravi','18-25',1,2,'District player',5000,'2026-05-10','ABC College','9876543210',1,2,'[1]','[1, 2]'),(2,17,'Arjun','18-25',1,2,'State level player',8000,'2026-06-15','XYZ Sports Academy','9123456780',31,32,'[1]','[1, 3]');
 /*!40000 ALTER TABLE `sports_request_beneficiaries` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2365,7 +2365,7 @@ CREATE TABLE `sports_requests` (
   CONSTRAINT `fk_sports_urgency` FOREIGN KEY (`urgency_id`) REFERENCES `urgency_levels` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
   CONSTRAINT `sports_requests_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE,
   CONSTRAINT `sports_requests_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `request_categories` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2374,7 +2374,7 @@ CREATE TABLE `sports_requests` (
 
 LOCK TABLES `sports_requests` WRITE;
 /*!40000 ALTER TABLE `sports_requests` DISABLE KEYS */;
-INSERT INTO `sports_requests` VALUES (14,1,6,'Sports Support','Need support','2026-04-09 08:46:49','2026-04-21 09:32:00',0,NULL,1,1);
+INSERT INTO `sports_requests` VALUES (14,1,6,'Sports Support','Need support','2026-04-09 08:46:49','2026-04-21 09:32:00',0,NULL,1,1),(17,1,6,'Cricket Training Support','Need support for coaching and equipment','2026-04-21 14:33:05','2026-04-21 14:33:05',0,NULL,1,2);
 /*!40000 ALTER TABLE `sports_requests` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2678,4 +2678,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-04-21 18:47:05
+-- Dump completed on 2026-04-21 20:51:00
